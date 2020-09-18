@@ -1,0 +1,360 @@
+%%% Fonts & Symbols %%%
+%LaTeX
+\usepackage[utf8]{inputenc} 													% Special characters; LaTeX
+\usepackage[T1]{fontenc} 														% Special characters; LaTeX
+\fontfamily{lmodern}															% Font; default LaTeX font; LaTeX
+\fontfamily{libertine}
+\usepackage[letterspace=0]{microtype} 							 				% Shrink spacing between letters; doesn't work with XeLaTeX
+
+%Both LaTeX and XeLaTeX
+\usepackage{soul}							 										% Highlighting text (did NOT test with XeLaTex)
+\usepackage[portuguese, english]{babel} 										% Language package for special characters
+\usepackage[space, extendedchars, multidot]{grffile} 							% Special characters
+\usepackage[official]{eurosym} 													% Euro symbol
+\usepackage{xcolor}%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor} 						% Font colours; simply use e.g. {\color{red} some text} to colour font; cannot be used with Beamer
+
+%%%% Format Paragraph %%% 
+\usepackage{ragged2e} 															% Enables justifying text using {\justify text}
+\usepackage{setspace} 															% Setspace respects body, footnotes and captions spacing
+\usepackage{multicol} 															% Multicolumn in text
+\usepackage[flushmargin,bottom]{footmisc}									% Enables formatting footnotes
+%\usepackage{dblfnote} 															% Double column in footnotes
+\usepackage[all]{nowidow}														% Prevent isolated words at the end of the page
+\setlength{\columnsep}{0.5cm} 													% Set the gap between the columns
+\interfootnotelinepenalty=10000 												% Prevents breaking footnotes across pages
+\setlength{\parskip}{0.5em} 													% Paragraph Spacing
+\setlength{\parindent}{0.25cm} 													% Paragraph Indenting;
+%!!USES setspace PACKAGE
+%\singlespacing 																% Line Single Spacing
+%\onehalfspacing 																% Line 1.5 Spacing
+%\doublespacing 																% Line 2.0 Spacing
+\setstretch{1} 																	% Line 1.25 Spacing
+%\begin{doublespace}\end{doublespace} 											% Specific doublespace environment
+%\begin{spacing}{2.5}\end{spacing} 												% Specific customized line spacing environment
+%{\addfontfeatures{LetterSpace-6} write text here} 								% Shrink spacing between letters for a spefic part of the document; addfontfeatures serves to add all types of font features; used with fontspec
+\setlength\footnotemargin{10pt} 												% Specific footnote margin
+\raggedbottom																	% Prevents large blanks in the middle of the page
+\usepackage{chngcntr}															% Define counters (equations, footnotes, theorems, etc.)
+%\counterwithout{footnote}{chapter}									% Prevent footnotes to restart from 1 at each chapter
+%\counterwithout{figure}{chapter}										% Prevent figures to restart from 1 at each chapter
+%\counterwithout{table}{chapter}											% Prevent tables to restart from 1 at each chapter
+%\makeatletter
+%        \@addtoreset{footnote}{part}    							% Reset footnote every part
+%        \@addtoreset{figure}{part}    							% Reset footnote every part
+%        \@addtoreset{table}{part}    							% Reset footnote every part
+%\makeatother
+%\renewcommand\thefigure{\arabic{part}.\arabic{figure}}				% Inserts the part number in the figure numbering
+%\renewcommand\thetable{\arabic{part}.\arabic{table}}				% Inserts the part number in the table numbering
+\usepackage{courier} 															% Code-like font
+%\usepackage{tocloft}															% Format TOC
+\usepackage{pdfpages}														% Include pdf files keeping the header
+\usepackage{lastpage}														% Set \pageref{LastPage} for last page counter
+
+%%%% Math %%%
+%\usepackage{amsmath}															% Basic math characters; included in mathtools
+\usepackage{amsfonts}															% Fonts from the American Mathematical Society
+\usepackage{amsthm}												  				% Theorem package
+\usepackage{mathtools}															% Basic math characters
+\usepackage{amsbsy} 															% Bold symbols with \pmb
+\usepackage{amssymb}															% Basic math symbols
+\usepackage{bbm}																% Blackboard-style math characters
+\usepackage{units}																% Nice diagonal fractions
+%\usepackage{bm}																% Bold sym­bols in maths mode; Conflicts with XeLaTeX
+\usepackage{bbm}																% Indicator function
+\usepackage{empheq} 															% Emphasize equations
+\usepackage{centernot} 															% "Not" can be applied to any symbol; does not work with XeLaTeX
+\usepackage{tensor}			 													% Enables ordering of superscripts and subscripts
+%\usepackage{mathspec}															% Specify arbitrary fonts for mathematics; Use only with XeLaTeX; Conflicts with amsmath
+\usepackage{txfontsb}		 													% Enables usage of varmathbb
+
+%%%% Math: Format Space around enviroments %%%
+%\makeatletter
+%\g@addto@macro\normalsize{%
+%  \setlength\abovedisplayskip{10pt}
+%  \setlength\belowdisplayskip{10pt}
+%  \setlength\abovedisplayshortskip{10pt}
+%  \setlength\belowdisplayshortskip{10pt}
+%}
+%\makeatother
+
+%%% Math Commands %%% 
+\newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}						% Emphasize equations use comand \widefbox
+\newcommand{\C}{{\varmathbb{C}}}										% Defines command \C to denote Complex
+\newcommand{\R}{{\mathbb{R}}} 													% Defines command \R to denote Reals
+\newcommand{\Q}{{\varmathbb{Q}}} 										% Defines command \Q to denote Rationals
+\newcommand{\Z}{{\varmathbb{Z}}}										% Defines command \Z to denote Integers
+\newcommand{\N}{{\mathbb{N}}} 													% Defines command \N to denote Naturals
+\newcommand{\pd}{\partial} 														% Defines command \pd to denote partial derivatives
+\newcommand{\bimpl}{{\,\Leftrightarrow\,}} 										% Defines command \bimpl to denote long left-right arrow (bidirectional implication)
+\newcommand{\nbimpl}{{\,\nLeftrightarrow\,}} 										% Defines command \nbimpl to denote crossed long left-right arrow  (not bidirectional implication)
+\newcommand{\impl}{{\,\Rightarrow\,}} 										% Defines command \impl to denote long right arrow (implies)
+\newcommand{\nimpl}{{\,\nRightarrow\,}} 										% Defines command \nimpl to denote crossed long right arrow (does not imply)
+\newcommand{\limpl}{{\,\Leftarrow\,}} 										% Defines command \limpl to denote long left arrow (left-directional implication)
+\newcommand{\rar}{{\,\rightarrow\,}} 										% Defines command \rar to denote right arrow 
+\newcommand{\nrar}{{\,\nrightarrow\,}} 										% Defines command \nrar to denote crossed right arrow
+\newcommand{\lar}{{\,\leftarrow\,}} 										% Defines command \lar to denote left arrow 
+\newcommand{\nlar}{{\,\nleftarrow\,}} 										% Defines command \nlar to denote crossed left arrow
+\newcommand{\uar}{{\,\uparrow\,}} 										% Defines command \uar to denote up arrow 
+\newcommand{\nuar}{{\,\nuparrow\,}} 										% Defines command \nuar to denote crossed up arrow
+\newcommand{\dar}{{\,\downarrow\,}} 										% Defines command \dar to denote down arrow 
+\newcommand{\ndar}{{\,\ndownarrow\,}} 										% Defines command \ndar to denote crossed down arrow
+\newcommand{\lagr}{\mathcal{L}} 												% Defines command \lagr to denote the Lagrangian L
+\newcommand{\hami}{\mathcal{H}} 												% Defines command \hami to denote the Hamiltonian H
+\newcommand{\inc}{\Delta\,} 														% Defines command \inc to denote Delta for increment/variation symbol
+\newcommand{\ce}{\varepsilon} 														% Defines command \ce to denote curly epsilon
+\newcommand{\cphi}{\varphi} 														% Defines command \cphi to denote curly phi
+\newcommand{\bcs}{\backslash} 														% Defines command \bcs to denote backslash in math environment
+\newcommand{\ints}{\,\mathrm{int}\,}													% Defines command \ints to denote int [interior points of a set] in math environment
+\newcommand{\thf}{\,\therefore\,}													% Defines command \thf to denote \therefore in math environment
+\newcommand{\bec}{\,\because\,}													% Defines command \bec to denote \because in math environment
+\newcommand{\E}{\mathbb{E}}													% Defines command \E to denote E() in math environment
+\newcommand{\Var}{\mathbb{V}}													% Defines command \Var to denote Var() in math environment
+\newcommand{\Covar}{\text{Cov}}													% Defines command \Covar to denote Covar() in math environment
+\newcommand{\supp}{\text{supp}}													% Defines command \supp to denote Var() in math environment
+\newcommand{\pr}{\mathbb{P}}													% Defines command \var to denote P() in math environment
+\newcommand{\convp}{\overset{p}{\to}}								% Defines command \convp to denote convergence in probability in math environment
+\newcommand{\convd}{\overset{d}{\to}}								% Defines command \convp to denote convergence in distribution in math environment
+\newcommand{\indeprv}{\protect\mathpalette{\protect\independenT}{\perp}}								% Defines command \indeprv to denote independent random variables in math environment
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand{\oset}{\varnothing} 														% Defines command \oset to denote empty set
+\newcommand{\lrp}[1]{\left({#1}\right)}													% Defines command \lrp to denote left-right parenthesis
+\newcommand{\lrb}[1]{\left\{{#1}\right\}}													% Defines command \lrb to denote left-right brackets
+\newcommand{\lrsb}[1]{\left[{#1}\right]}													% Defines command \lrb to denote left-right brackets
+\newcommand{\indic}{\mathbbm{1}}													% Defines command \indic to denote indicator function
+\newcommand{\eqnumber}{\refstepcounter{equation}\tag{\theequation}} % Inserts number in equation within nonnumber environment
+\newcommand{\dis}{\displaystyle}										 % Renders inline equations as full display
+
+%%% Math Theorems, Propositions and etc. %%% 
+%\newtheorem{<name>}{<heading>}[<counter>] 
+		%will create an environment <name> for a theorem-like structure; the counter for this structure will be subordinated to <counter>. On the other hand, using
+%\newtheorem{<name>}[<counter>]{<heading>}
+		%will create an environment <name> for a theorem-like structure; the counter for this structure will share the previously defined <counter> counter.
+\newtheorem{thm}{Theorem} 															% Defines the theorem environment
+\newtheorem{prop}{Proposition} 											% Defines the proposition environment
+\newtheorem{corol}{Corollary} 											% Defines the corollary environment
+\newtheorem{claim}{Claim} 														% Defines the corollary environment
+\newtheorem{mylemma}{Lemma} 													% Defines the lemma environment
+\newtheorem{remark}{Remark} 												% Defines the remark environment
+\newtheorem{dfn}{Definition}													% Defines the dfn environment
+\newtheorem{conjecture}{Conjecture}													% Defines the dfn environment
+\newtheorem{myfact}{Fact}													% Defines the dfn environment
+\newtheorem*{myfact*}{Fact}													% Defines the dfn environment
+\setbeamertemplate{theorems}[numbered]
+%\renewcommand\theprop{\arabic{part}.\arabic{prop}} 						% Inserts the part number in the proposition numbering
+%\renewcommand\thetheorem{\arabic{part}.\arabic{theorem}}		% Inserts the part number in the theorem numbering
+%\renewcommand\thelemma{\arabic{part}.\arabic{lemma}}			% Inserts the part number in the lemma numbering
+%\renewcommand\theremark{\arabic{part}.\arabic{remark}}				% Inserts the part number in the remark numbering
+
+%%% Graphics and Tables %%%
+\usepackage{graphicx}															% Support for graphics
+\usepackage{tabularx}															% Support for tables
+\usepackage{ltablex}															% Long tables X
+\usepackage{pdflscape}															% Landscape page contents
+\usepackage{longtable} 															% Long tables
+\usepackage{tabu} 																% Long tables with longtabu; define paragraphs; flexible tables
+\usepackage{hhline} 															% Double hline in tables
+\usepackage{booktabs} 															% Format tables; \toprule, \midrule, \bottomrule; informative and practical readme
+\usepackage{multirow} 															% Multirow in tables
+\usepackage[textfont=bf,hypcap]{caption}		 								% Format captions \label{sec:section} section label~\ref{sec:section}
+%\captionsetup[table]{labelformat=simple,labelsep=period}						% Format table captions
+%\usepackage[labelformat=empty]{caption} 										% Format captions 
+\usepackage{ragged2e}															% Align with \flushleft, etc
+\usepackage{array}																% Matricial support
+\usepackage{epstopdf}															% Include .eps graphics; does not work well with XeLaTeX
+\usepackage{fancyref}															% Labeling details
+%\usepackage{tikz-qtree} 														% Draw game theory extensive form graphs/trees
+%\usepackage{stata}																% Import tables using sjlog, texdoc
+\usepackage{fancyref}															% Details labeling
+\usepackage{float}																% Prevent floats from floating
+%\usepackage[capposition=top]{floatrow}					% Note for figures using \floatfoot{content...}
+\newcommand\fignote[1]{\captionsetup{textfont=normal,font=small}\caption*{#1}}
+\usepackage{pgfplots} \pgfplotsset{compat=1.14} \usetikzlibrary{calc}
+\newcommand\payoff[1]{ $\begin{pmatrix} #1 \end{pmatrix}$} % Command for payoffs in game trees
+\usepackage{dcolumn}	
+\usepackage{subcaption}
+
+%%% Lists %%% 
+%\usepackage[ampersand]{easylist}												% List package
+%\usepackage{enumitem}															% Great list package
+									% \begin{enumerate}[label=\roman*] or [label=\alph*] [label=\arabic*] or \Roman* or \Alph* or label=-, \bullet, or any other sign
+									% To use embeded lists, use \begin{enumerate}[label=\arabic*.] for the first and \begin{enumerate}[label=\theenumi.(\roman*).] to get 1.i.
+									% Anything can be used as a label, namely \bullet, \rhd, \circ, \Box, \rightarrow, \triangleright, \RIGHTarrow - see http://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf for more symbols
+									% It suffices to use \item to get the list
+									% [...,noitemsep] kills the space between paragraphs within the list; nosep kills all vertical spacing
+									% Resume keeps going at previous list
+%\newlist{todolist}{itemize}{2}
+%\setlist[todolist]{label=$\square$} % To-do lists
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+%%% Varia %%% 
+\usepackage{etoolbox}															% Extends TeX code
+\usepackage{ifthen} 															% Produce if clauses
+\usepackage{datetime2} 															% Get month and time
+\makeatletter
+\newcommand*{\monthyeardate}{%
+  \DTMenglishmonthname{\@dtm@month}, \@dtm@year
+}
+\makeatother
+\makeatletter
+\newcommand*{\todaydate}{%
+  \DTMenglishmonthname{\@dtm@month} \@dtm@day, \@dtm@year
+}
+\makeatother
+
+%%% Format Headers/Footers and Chapters/Sections/Subsections/Subsubsections %%%%
+%\usepackage[sf,sl,outermarks]{titlesec}
+%\usepackage{titleps}
+%\setcounter{secnumdepth}{2}														% Depth in Table of Contents
+%\titlelabel{\thetitle.\quad}
+\renewcommand*{\thepart}{\Roman{part}}
+\renewcommand*{\thesection}{ \arabic{section}.}
+\renewcommand*{\thesubsection}{\thesection \arabic{subsection}}
+\renewcommand*{\thesubsubsection}{\roman{subsubsection}.}
+%\numberwithin{equation}{section}
+%\renewcommand*{\theequation}{\arabic{section}.\arabic{equation}}    
+
+%%% Citing %%% 
+%\usepackage[natbib=true]{biblatex} 											% Citing
+\usepackage[authoryear]{natbib} 												% Citing
+%\renewcommand{\bibsection}{}
+%\usepackage{usebib}
+%\usepackage{keyval}
+%\setcitestyle{authoryear,aysep={},open={(},close={)}}
+\usepackage{hyperref}															% Define links (color, shape, etc)
+
+%\hypersetup{
+%    pdffitwindow=false,									% Window fit to page when opened
+%    pdfstartview={XYZ null null 1.00},					% Fits the zoom of the page to 100%
+%    pdfnewwindow=true, 									% Links in new window
+%    colorlinks=true,									% false: boxed links; true: colored links
+%    linkcolor={red!50!black},							% Color of internal links (black is necessary for printing quality)
+%    citecolor={blue!50!black},							% Color of links to bibliography
+%    urlcolor=black,										% Color of external links
+%%	hidelinks, 											% No colour nor borders in links
+%	linkbordercolor={white},							% Color of links from hyperref; enables dropping of ugly borders in citations
+%    pdfauthor = {Duarte Goncalves},
+%    pdfkeywords = {1, 2, 3},
+%    pdftitle = {\titlepresentation},
+%    pdfsubject = {},
+%    pdfpagemode = UseNone
+%} 
+\setlength{\bibsep}{0pt plus 0.3ex} 											% Determines space between entries in bibliography
+\bibpunct{(}{)}{;}{a}{,}{,} 													% Citing Type; see natbib reference shee
+
+%\addto\extrasenglish{															% Change \autoref automatic labels
+%\renewcommand{\partautorefname}{chapter} 
+%\renewcommand{\chapterautorefname}{section} 
+%\renewcommand{\sectionautorefname}{section} 
+%\renewcommand{\subsectionautorefname}{section} 
+%\renewcommand{\figureautorefname}{fig.} 
+%\renewcommand{\tableautorefname}{table} 
+%\renewcommand{\equationautorefname}{eq.}
+%}
+%\renewcommand{\bibsection}{}					% References come at the end
+
+\makeatletter
+\DeclareRobustCommand\citepos													% Create possessives with \citepos[e.g.][p. Y]{Key}: e.g. Key's (Year, p. Y)
+  {\begingroup\def\NAT@nmfmt##1{{\NAT@up##1's}}%
+   \NAT@swafalse\let\NAT@ctype\z@\NAT@partrue
+   \@ifstar{\NAT@fulltrue\NAT@citetp}{\NAT@fullfalse\NAT@citetp}}
+
+\pretocmd{\NAT@citex}{%
+  \let\NAT@hyper@\NAT@hyper@citex
+  \def\NAT@postnote{#2}%
+  \setcounter{NAT@total@cites}{0}%
+  \setcounter{NAT@count@cites}{0}%
+  \forcsvlist{\stepcounter{NAT@total@cites}\@gobble}{#3}}{}{}
+\newcounter{NAT@total@cites}
+\newcounter{NAT@count@cites}
+\def\NAT@postnote{}
+
+\def\NAT@hyper@citex#1{%														% Include postnote and \citet closing bracket in hyperlink
+  \stepcounter{NAT@count@cites}%
+  \hyper@natlinkstart{\@citeb\@extra@b@citeb}#1%
+  \ifnumequal{\value{NAT@count@cites}}{\value{NAT@total@cites}}
+    {\if*\NAT@postnote*\else\NAT@cmt\NAT@postnote\global\def\NAT@postnote{}\fi}{}%
+  \ifNAT@swa\else\if\relax\NAT@date\relax
+  \else\NAT@@close\global\let\NAT@nm\@empty\fi\fi								% Avoid compact citations
+  \hyper@natlinkend}
+\renewcommand\hyper@natlinkbreak[2]{#1}
+
+\patchcmd{\NAT@citex}															% Avoid extraneous postnotes, closing brackets
+  {\ifNAT@swa\else\if*#2*\else\NAT@cmt#2\fi
+   \if\relax\NAT@date\relax\else\NAT@@close\fi\fi}{}{}{}
+\patchcmd{\NAT@citex}
+  {\if\relax\NAT@date\relax\NAT@def@citea\else\NAT@def@citea@close\fi}
+  {\if\relax\NAT@date\relax\NAT@def@citea\else\NAT@def@citea@space\fi}{}{}
+\patchcmd{\NAT@cite}{\if*#3*}{\if*\NAT@postnote*}{}{}
+
+\makeatother
+
+
+%% Other citation commands
+%\cite{citationkey}: Author (Year)\\
+%\citet[p. X]{citationkey}: Author (Year, p. X)\\
+%\citep{citationkey}: (Author, Year)\\
+%\citep[ch. Y]{citationkey}: (Author, Year, ch. Y)\\
+%\citep[see][]{citationkey}: (see Author, Year)\\
+%\citep[see][ch. Y]{citationkey}: (see Author, Year, ch. Y)\\
+%\citepos[see][ch. Y]{citationkey}: see Author's (Year, ch. Y)\\
+%\citealt{citationkey}: Author Year
+%\defcitealias{KEY}{Alias}; \citetalias{KEY}: Alias\\
+%\citetalias[Year, p.]{KEY}: Alias (Year, p.); \citepalias[Year, p.]{KEY}: (Alias, Year, p.)
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\footauthorpresentation
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\foottitlepresentation
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} %/ \inserttotalframenumber
+    \hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+\date{\datepresentation}
+\title[]{\foottitlepresentation}
+\author{\authorpresentation}
+\institute{\institutepresentation}
+
+
+
+
+
+
+\newtheoremstyle{named}{}{}{}{}{\bfseries}{.}{.5em}{\thmnote{#3}}
+\theoremstyle{named}
+\newtheorem*{namedenv}{namedenv}
+%
+%\makeatletter
+%\declaretheoremstyle[
+%	spaceabove=15pt,
+%	spacebelow=15pt,
+%%    headformat={\makebox[0pt][r]{\ }\NAME\, \NUMBER: \NOTE},
+%    headformat=\NAME\, \NUMBER: \NOTE,
+%    headpunct={},
+%    notefont=\bfseries, 
+%%  headfont=\normalfont,%\scshape,
+%	notebraces={}{},
+%	bodyfont=\normalfont,
+%	postheadspace=\newline,
+%	qed=\qedsymbol
+%]{mythmstyle}
+%\makeatother
+%\declaretheorem[style=mythmstyle, title=Example]{examples}
+
+

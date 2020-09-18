@@ -1,0 +1,331 @@
+\newcommand{\datepresentation}{December 6, 2019}
+\newcommand{\titlepresentation}{Entry, Exit and Platform Entry}
+\newcommand{\foottitlepresentation}{Entry, Exit and Platform Entry}
+%\newcommand{\subtitlepresentation}{Experimental Evidence on Belief Updating}
+\newcommand{\authorpresentation}{Duarte Gon\c{c}alves}
+\newcommand{\footauthorpresentation}{Gon\c{c}alves (Columbia)}
+\newcommand{\institutepresentation}{Columbia University}
+\newcommand{\conferencepresentation}{Cognition and Decision Lab}
+
+%BEGIN_FOLD 																	% Packages and Configuration
+%%%%%%%%%%%%% Begin Preamble %%%%%%%%%%%%%
+%%% Document Class %%%
+\documentclass[8pt, aspectratio=43,usenames,dvipsnames]{beamer} % handout option ignores pauses for pdf compiling; aspectratio=169, 43
+	\usepackage{pgfpages} 
+	%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=1cm,landscape]				%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=1cm]
+\usetheme{Boadilla}\usecolortheme{default}
+\usepackage{xcolor}
+
+\definecolor{CUblue}{RGB}{185,217,235}
+\definecolor{myblue}{RGB}{51,64,189}
+\definecolor{titleblue}{RGB}{0,0,205}
+
+\definecolor{mycolor1}{rgb}{0.368417, 0.506779, 0.709798}
+\definecolor{mycolor2}{rgb}{0.880722,0.611041,0.142051}
+\definecolor{mycolor3}{rgb}{0.560181,0.691569,0.194885}
+
+\setbeamercolor{structure}{fg=myblue}
+\setbeamercolor{author in head/foot}{fg=black, bg=white}
+\setbeamercolor{title in head/foot}{fg=black, bg=white}
+\setbeamercolor{date in head/foot}{fg=black, bg=white}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamercovered{transparent}
+\def\beamertemplatetransparentcoveredhigh{\setbeamercovered{transparent=5}}
+\beamertemplatetransparentcoveredhigh
+
+\makeatletter
+\newtheorem*{repattheorem}{\repattitle}
+\newcommand{\newreptheorem}[2]{%
+\newenvironment{rep#1}[1]{%
+ \def\repattitle{#2 \ref*{##1}}%
+ \begin{repattheorem}}%
+ {\end{repattheorem}}}
+ \makeatother
+
+\makeatletter
+\newcommand*{\tc}[1]{{\color{myblue}#1}}
+\makeatother
+
+\newreptheorem{thm}{Theorem} 															% Defines the theorem environment
+\newreptheorem{prop}{Proposition} 											% Defines the proposition environment
+\newreptheorem{corol}{Corollary} 											% Defines the corollary environment
+\newreptheorem{claim}{Claim} 														% Defines the corollary environment
+\newreptheorem{lemma}{Lemma} 													% Defines the lemma environment
+\newreptheorem{remark}{Remark} 												% Defines the remark environment
+\newreptheorem{hyp}{Hypothesis}												% Defines the hyp environment
+\newreptheorem{exmpl}{Example}													% Defines the exmpl environment
+\newreptheorem{dfn}{Definition}													% Defines the dfn environment
+\newreptheorem{assumption}{Assumption}									% Defines the dfn environment
+
+
+\usepackage{textpos}
+\usepackage{filecontents}   
+\input{preamblebeamer20180309.tex}
+%END_FOLD
+
+\usepackage{tipa}
+
+\begin{document}
+%%%%% Title Page %%%%% 
+
+{
+\setbeamertemplate{footline}{} % remove slider number on title slide
+\setbeamertemplate{navigation symbols}{} % remove navigation symbols on title slide
+\begin{frame}[noframenumbering,plain]
+\begin{center}
+\textbf{\color{titleblue}A User-Centric Approach to the Design and Consequences of Recommender Systems}\\
+Guy Aridor, \underline{Duarte Gon\c{c}alves}, Shan Sikdar
+\end{center}
+\begin{enumerate}
+\setbeamertemplate{enumerate items}{}
+\itemsep=1.5em\setstretch{1.15}
+\setlength{\itemindent}{-1.25em}
+\item How do recommender systems affect: (1) \textbf{filter bubbles} and (2) \textbf{user homogenization}
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-3em}
+	\normalsize
+	\item Empirically observed filter bubbles \textit{without recommendation} (Nguyen et al., 2014): why?
+	\item Concern that recommender systems may worsen situation
+	\end{enumerate}
+\end{enumerate}
+\begin{minipage}{.75\textwidth}
+\begin{enumerate}
+\setbeamertemplate{enumerate items}{}
+\itemsep=1.5em\setstretch{1.15}
+\setlength{\itemindent}{-1.25em}
+\item \textbf{Model}
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-3em}
+	\normalsize
+	\item Users \textbf{uncertain} about their valuation of products\\
+	value = idiosyncratic + common components
+	\item \textbf{(Bayesian) learning by consuming}: one product consumer per period; finite horizon $T$; normally distributed values
+	\item \textbf{Spillovers}: valuation of products correlated; higher \textit{correlation} for nearby/more \textit{similar} products
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{.24\textwidth}
+~\\[15pt]
+\includegraphics[width=.9\textwidth]{circle.pdf}
+\end{minipage}
+\begin{enumerate}
+\setbeamertemplate{enumerate items}{}
+\itemsep=1.5em\setstretch{1.15}
+\setlength{\itemindent}{-1.25em}
+\item Contrast \textbf{\color{mycolor1}No Recommendation} to
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-3em}
+	\normalsize
+	\item \textbf{\color{mycolor2}Recommendation}: provide information on expected values given past consumption values and other users' valuation
+	\item \textbf{\color{mycolor3}Oracle}: ex-post optimal consumption path
+	\item Evaluation: simulation on grid of parameter values (e.g. horizon, number of products, correlation)
+	\end{enumerate}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[noframenumbering,plain]
+\begin{center}
+\textbf{\color{titleblue}A User-Centric Approach to the Design and Consequences of Recommender Systems}\\
+Guy Aridor, \underline{Duarte Gon\c{c}alves}, Shan Sikdar
+\end{center}
+\begin{enumerate}
+\setbeamertemplate{enumerate items}{}
+\itemsep=1.5em\setstretch{1.15}
+\setlength{\itemindent}{-1.25em}
+\item \textbf{Filter Bubbles}
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-3em}
+	\normalsize
+	\item \textbf{\color{mycolor1}No Recommendation}: filter bubble effect; negative correlation between welfare and diversity
+	\item \textbf{\color{mycolor2}Recommendation}: \textit{mitigates filter bubbles}; no correlation between welfare and diversity
+	\end{enumerate}
+\item \textbf{User Homogeneity}
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-3em}
+	\normalsize
+	\item \textbf{\color{mycolor1}No Recommendation}: lower coordination than {\color{mycolor3}optimal} ({\color{mycolor3}oracle}); idiosyncratic consumption paths 
+	\item \textbf{\color{mycolor2}Recommendation}: higher coordination than {\color{mycolor3}optimal}; over-exploitation of other users' preferences
+	\end{enumerate}
+\begin{minipage}{.47\textwidth}
+\centering
+\includegraphics[width=\textwidth]{rho_pos_consumption_dist_N_200T_20_overall.pdf}
+\end{minipage}
+\begin{minipage}{.47\textwidth}
+\centering
+~\\[10pt]
+\includegraphics[width=\textwidth]{rho_homogeneity_N_200_T_20.pdf}
+\end{minipage}
+%\begin{minipage}{.3\textwidth}
+%\centering
+%\includegraphics[width=\textwidth]{diversity_welfare_rn_partial.pdf}
+%\end{minipage}
+\end{enumerate}
+\end{frame}
+}
+\end{document}
+
+%%%%% Table of Contents %%%%% 
+{\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[ball]
+\setcounter{tocdepth}{2} %Set level of depth for table of contents (section, subsection, subsubsection)
+%\begin{frame}\frametitle{Table of contents}\tableofcontents\end{frame}
+}
+
+%%%%% Presentation %%%%% 
+%\section{Introduction}
+%\begin{frame}\frametitle{Introduction}
+%\begin{itemize}
+%\setbeamertemplate{itemize items}[ball]
+%\itemsep=1em\setstretch{1.15}
+%\item Game tree examples: (i) small, already mistakes, but few (they are mistakes); (ii) larger, more mistakes, but not necessarily because opponents make mistakes!; (iii) off-path payoffs matter; (iv) attention is costly: focus on what's more relevant
+%\item Ten little treasures: matching pennies
+%~\\
+%	\begin{itemize}
+%	\setbeamertemplate{itemize items}[triangle]
+%	\itemsep=0.5em\setstretch{1}
+%	\item 1st sub-level
+%	\item 2nd sub-level
+%	\end{itemize}
+%\item Second level\\
+%Possibly, some text here
+%\item Third level
+%\end{itemize}
+%
+%\end{frame}
+
+
+%\begin{frame}\frametitle{Motivating Examples}
+%\begin{itemize}
+%\setbeamertemplate{itemize items}[ball]
+%\itemsep=1em\setstretch{1.15}
+%\item Pricing and market research
+%	\begin{itemize}
+%	\setbeamertemplate{itemize items}[triangle]
+%	\itemsep=.8em\setstretch{1}
+%	\normalsize
+%	\item A firm faces a pricing problem, $p \in P$
+%	\item But does not know distribution of WTP in the population
+%	\item Can do market research (e.g. surveys, focus groups, etc) paying $c$ per data point
+%	\end{itemize} \pause
+%\item Choosing with memory frictions
+%	\begin{itemize}
+%	\setbeamertemplate{itemize items}[triangle]
+%	\itemsep=.8em\setstretch{1}
+%	\normalsize
+%	\item Individual goes to a caf\'{e} and can order coffee, orange juice or orxata
+%	\item DM knows how much she likes coffee and orange juice 
+%	\item She makes an effort to remember whether she liked orxata the last times she had it
+%	\item It is costly to remember
+%	\end{itemize}
+%	\pause
+%\item When to stop collecting data?
+%\item What are the behavioral implications?
+%\end{itemize}
+%\end{frame}
+
+
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\color{black}{\inserttocsection}}
+\setbeamertemplate{subsection in toc}{\hspace{1.2em}\color{myblue}{--}~\color{black}{\inserttocsubsection}\par}
+
+\begin{frame}\frametitle{Plan for today}
+\begin{enumerate}
+\setbeamertemplate{enumerate items}{}
+\itemsep=1.5em\setstretch{1.15}
+\setlength{\itemindent}{-1.25em}
+\item A research project
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-1em}
+	\normalsize
+	\item Motivation
+	\item Setup: sketch and ideas
+	\item Conjectures
+	\end{enumerate}
+\item Main goal: feedback on research \textit{idea}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}\frametitle{Motivation}
+\begin{enumerate}
+\setbeamertemplate{enumerate items}{}
+\itemsep=1.5em\setstretch{1.15}
+\setlength{\itemindent}{-1.25em}
+\item Retailers often sell their \textbf{own products}
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-1em}
+	\normalsize
+	\item Macy's, Walgreens, Walmart, Trader Joe's, Costco, etc.
+	\item Standard in-house product development
+	\item Many retailers have their own private clothings brands
+	\end{enumerate}
+\pause
+\item Online platforms and \textbf{peak cloning}
+	\begin{enumerate}
+	\vspace{.5em}
+	\setbeamertemplate{enumerate items}{-}
+	\itemsep=.8em\setstretch{1}
+	\setlength{\itemindent}{-1em}
+	\normalsize
+	\item Retailers already able to clone and substitute more homogeneous goods that were sure bets (e.g. Walmart's Dr. Pepper soda clone called Dr. Thunder)
+	\item Detailed information allows online platforms/retailers better information on demand for attributes and product appeal and to clone rising and more successful products
+	\pause
+	\item[] \textit{Amazon's advantage over traditional retailers is its knowledge and access to data from its platform}. (NYT, 2018.06.23)
+	\end{enumerate}
+\end{enumerate}
+\end{frame}
+
+
+{
+\setbeamertemplate{footline}{} % remove slider number on title slide
+\setbeamertemplate{navigation symbols}{} % remove navigation symbols on title slide
+\begin{frame}[noframenumbering,plain]
+\begin{center}
+~\vspace{1cm}\\
+{\LARGE \color{myblue} \titlepresentation}%\\[10pt]
+%{\large \color{myblue} \subtitlepresentation}\\
+~\vspace{1cm}\\
+
+%BEGIN_FOLD		% Single Author
+%{\large \authorpresentation }\\[5pt]
+%{\small \institutepresentation} \\
+%END_FOLD
+
+%BEGIN_FOLD		% Multiple Authors
+\begin{tabular}{cc}
+\large Duarte Gon\c{c}alves & Guy Aridor\\[10pt]
+{\small Columbia University} & {\small Columbia University}
+\end{tabular}
+%END_FOLD
+
+~\vspace{1cm}\\
+{ \conferencepresentation }\\[15pt]
+%\footnotesize \centering Conference
+
+\small  \datepresentation\\
+~\vspace{0.4cm}\\
+\end{center}
+\end{frame}
+}
+\end{document}
