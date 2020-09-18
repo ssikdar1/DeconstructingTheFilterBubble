@@ -1,0 +1,458 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{33}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Adomavicius and Tuzhilin}{Adomavicius and
+  Tuzhilin}{2005}]%
+        {adomavicius2005toward}
+\bibfield{author}{\bibinfo{person}{Gediminas Adomavicius} {and}
+  \bibinfo{person}{Alexander Tuzhilin}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Toward the next generation of recommender systems:
+  A survey of the state-of-the-art and possible extensions}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge \& Data
+  Engineering}} \bibinfo{number}{6} (\bibinfo{year}{2005}),
+  \bibinfo{pages}{734--749}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bettman, Luce, and Payne}{Bettman
+  et~al\mbox{.}}{1998}]%
+        {bettman1998constructive}
+\bibfield{author}{\bibinfo{person}{James~R Bettman},
+  \bibinfo{person}{Mary~Frances Luce}, {and} \bibinfo{person}{John~W Payne}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Constructive consumer choice processes}.
+\newblock \bibinfo{journal}{\emph{Journal of consumer research}}
+  \bibinfo{volume}{25}, \bibinfo{number}{3} (\bibinfo{year}{1998}),
+  \bibinfo{pages}{187--217}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Billot, Gilboa, and Schmeidler}{Billot
+  et~al\mbox{.}}{2008}]%
+        {billot2008axiomatization}
+\bibfield{author}{\bibinfo{person}{Antoine Billot}, \bibinfo{person}{Itzhak
+  Gilboa}, {and} \bibinfo{person}{David Schmeidler}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Axiomatization of an exponential similarity
+  function}.
+\newblock \bibinfo{journal}{\emph{Mathematical Social Sciences}}
+  \bibinfo{volume}{55}, \bibinfo{number}{2} (\bibinfo{year}{2008}),
+  \bibinfo{pages}{107--115}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Celma and Cano}{Celma and Cano}{2008}]%
+        {celma2008hits}
+\bibfield{author}{\bibinfo{person}{{\`O}scar Celma} {and}
+  \bibinfo{person}{Pedro Cano}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{From hits to niches?: or how popular artists can
+  bias music recommendation and discovery}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2nd KDD Workshop on Large-Scale
+  Recommender Systems and the Netflix Prize Competition}}. ACM,
+  \bibinfo{pages}{5}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Celma and Herrera}{Celma and Herrera}{2008}]%
+        {celma2008new}
+\bibfield{author}{\bibinfo{person}{{\`O}scar Celma} {and}
+  \bibinfo{person}{Perfecto Herrera}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{A new approach to evaluating novel
+  recommendations}. In \bibinfo{booktitle}{\emph{Proceedings of the 2008 ACM
+  conference on Recommender systems}}. \bibinfo{pages}{179--186}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chaney, Stewart, and Engelhardt}{Chaney
+  et~al\mbox{.}}{2018}]%
+        {chaney2018algorithmic}
+\bibfield{author}{\bibinfo{person}{Allison~JB Chaney},
+  \bibinfo{person}{Brandon~M Stewart}, {and} \bibinfo{person}{Barbara~E
+  Engelhardt}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{How algorithmic confounding in recommendation
+  systems increases homogeneity and decreases utility}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 12th ACM Conference on
+  Recommender Systems}}. ACM, \bibinfo{pages}{224--232}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chen, De~Gemmis, Felfernig, Lops, Ricci, and
+  Semeraro}{Chen et~al\mbox{.}}{2013}]%
+        {chen2013human}
+\bibfield{author}{\bibinfo{person}{Li Chen}, \bibinfo{person}{Marco De~Gemmis},
+  \bibinfo{person}{Alexander Felfernig}, \bibinfo{person}{Pasquale Lops},
+  \bibinfo{person}{Francesco Ricci}, {and} \bibinfo{person}{Giovanni
+  Semeraro}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Human decision making and recommender systems}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Interactive Intelligent
+  Systems (TiiS)}} \bibinfo{volume}{3}, \bibinfo{number}{3}
+  (\bibinfo{year}{2013}), \bibinfo{pages}{1--7}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cremonesi, Garzotto, and Turrin}{Cremonesi
+  et~al\mbox{.}}{2013}]%
+        {cremonesi2013user}
+\bibfield{author}{\bibinfo{person}{Paolo Cremonesi}, \bibinfo{person}{Franca
+  Garzotto}, {and} \bibinfo{person}{Roberto Turrin}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{User-centric vs. system-centric evaluation of
+  recommender systems}. In \bibinfo{booktitle}{\emph{IFIP Conference on
+  Human-Computer Interaction}}. Springer, \bibinfo{pages}{334--351}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Flaxman, Goel, and Rao}{Flaxman
+  et~al\mbox{.}}{2016}]%
+        {flaxman2016filter}
+\bibfield{author}{\bibinfo{person}{Seth Flaxman}, \bibinfo{person}{Sharad
+  Goel}, {and} \bibinfo{person}{Justin~M Rao}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Filter bubbles, echo chambers, and online news
+  consumption}.
+\newblock \bibinfo{journal}{\emph{Public opinion quarterly}}
+  \bibinfo{volume}{80}, \bibinfo{number}{S1} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{298--320}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fleder and Hosanagar}{Fleder and
+  Hosanagar}{2009}]%
+        {fleder2009blockbuster}
+\bibfield{author}{\bibinfo{person}{Daniel Fleder} {and} \bibinfo{person}{Kartik
+  Hosanagar}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Blockbuster culture's next rise or fall: The impact
+  of recommender systems on sales diversity}.
+\newblock \bibinfo{journal}{\emph{Management science}} \bibinfo{volume}{55},
+  \bibinfo{number}{5} (\bibinfo{year}{2009}), \bibinfo{pages}{697--712}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ge, Delgado-Battenfeld, and Jannach}{Ge
+  et~al\mbox{.}}{2010}]%
+        {ge2010beyond}
+\bibfield{author}{\bibinfo{person}{Mouzhi Ge}, \bibinfo{person}{Carla
+  Delgado-Battenfeld}, {and} \bibinfo{person}{Dietmar Jannach}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Beyond accuracy: evaluating recommender systems by
+  coverage and serendipity}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  fourth ACM conference on Recommender systems}}. ACM,
+  \bibinfo{pages}{257--260}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gilboa and Schmeidler}{Gilboa and
+  Schmeidler}{1995}]%
+        {gilboa1995case}
+\bibfield{author}{\bibinfo{person}{Itzhak Gilboa} {and} \bibinfo{person}{David
+  Schmeidler}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Case-based decision theory}.
+\newblock \bibinfo{journal}{\emph{The quarterly Journal of economics}}
+  \bibinfo{volume}{110}, \bibinfo{number}{3} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{605--639}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Herlocker, Konstan, Terveen, and
+  Riedl}{Herlocker et~al\mbox{.}}{2004}]%
+        {herlocker2004evaluating}
+\bibfield{author}{\bibinfo{person}{Jonathan~L Herlocker},
+  \bibinfo{person}{Joseph~A Konstan}, \bibinfo{person}{Loren~G Terveen}, {and}
+  \bibinfo{person}{John~T Riedl}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Evaluating collaborative filtering recommender
+  systems}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Information Systems
+  (TOIS)}} \bibinfo{volume}{22}, \bibinfo{number}{1} (\bibinfo{year}{2004}),
+  \bibinfo{pages}{5--53}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hodgson and Lewis}{Hodgson and Lewis}{2019}]%
+        {hodgson2019horse}
+\bibfield{author}{\bibinfo{person}{Charles Hodgson} {and}
+  \bibinfo{person}{Gregory Lewis}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{You Can Lead a Horse to Water: Spatial Learning and
+  Path Dependence in Consumer Search}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2019 ACM Conference on Economics and Computation}}
+  \emph{(\bibinfo{series}{EC ’19})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{215}.
+\newblock
+\showISBNx{9781450367929}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3328526.3329595}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hosanagar, Fleder, Lee, and Buja}{Hosanagar
+  et~al\mbox{.}}{2013}]%
+        {hosanagar2013will}
+\bibfield{author}{\bibinfo{person}{Kartik Hosanagar}, \bibinfo{person}{Daniel
+  Fleder}, \bibinfo{person}{Dokyun Lee}, {and} \bibinfo{person}{Andreas Buja}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Will the global village fracture into tribes?
+  Recommender systems and their effects on consumer fragmentation}.
+\newblock \bibinfo{journal}{\emph{Management Science}} \bibinfo{volume}{60},
+  \bibinfo{number}{4} (\bibinfo{year}{2013}), \bibinfo{pages}{805--823}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kaminskas and Bridge}{Kaminskas and
+  Bridge}{2014}]%
+        {kaminskas2014measuring}
+\bibfield{author}{\bibinfo{person}{Marius Kaminskas} {and}
+  \bibinfo{person}{Derek Bridge}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Measuring surprise in recommender systems}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the workshop on recommender systems
+  evaluation: dimensions and design (Workshop programme of the 8th ACM
+  conference on recommender systems)}}. Citeseer.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kotkov, Konstan, Zhao, and Veijalainen}{Kotkov
+  et~al\mbox{.}}{2018}]%
+        {kotkov2018investigating}
+\bibfield{author}{\bibinfo{person}{Denis Kotkov}, \bibinfo{person}{Joseph~A
+  Konstan}, \bibinfo{person}{Qian Zhao}, {and} \bibinfo{person}{Jari
+  Veijalainen}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Investigating serendipity in recommender systems
+  based on real user feedback}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  33rd Annual ACM Symposium on Applied Computing}}.
+  \bibinfo{pages}{1341--1350}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kotkov, Wang, and Veijalainen}{Kotkov
+  et~al\mbox{.}}{2016}]%
+        {kotkov2016survey}
+\bibfield{author}{\bibinfo{person}{Denis Kotkov}, \bibinfo{person}{Shuaiqiang
+  Wang}, {and} \bibinfo{person}{Jari Veijalainen}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{A survey of serendipity in recommender systems}.
+\newblock \bibinfo{journal}{\emph{Knowledge-Based Systems}}
+  \bibinfo{volume}{111} (\bibinfo{year}{2016}), \bibinfo{pages}{180--192}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lichtenstein and Slovic}{Lichtenstein and
+  Slovic}{2006}]%
+        {lichtenstein2006construction}
+\bibfield{author}{\bibinfo{person}{Sarah Lichtenstein} {and}
+  \bibinfo{person}{Paul Slovic}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The construction of preference}}.
+\newblock \bibinfo{publisher}{Cambridge University Press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Maksai, Garcin, and Faltings}{Maksai
+  et~al\mbox{.}}{2015}]%
+        {maksai2015predicting}
+\bibfield{author}{\bibinfo{person}{Andrii Maksai}, \bibinfo{person}{Florent
+  Garcin}, {and} \bibinfo{person}{Boi Faltings}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Predicting online performance of news recommender
+  systems through richer evaluation metrics}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 9th ACM Conference on
+  Recommender Systems}}. ACM, \bibinfo{pages}{179--186}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mas-Colell, Whinston, Green,
+  et~al\mbox{.}}{Mas-Colell et~al\mbox{.}}{1995}]%
+        {mas1995microeconomic}
+\bibfield{author}{\bibinfo{person}{Andreu Mas-Colell},
+  \bibinfo{person}{Michael~Dennis Whinston}, \bibinfo{person}{Jerry~R Green},
+  {et~al\mbox{.}}} \bibinfo{year}{1995}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Microeconomic theory}}.
+  Vol.~\bibinfo{volume}{1}.
+\newblock \bibinfo{publisher}{Oxford university press New York}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{McNee, Riedl, and Konstan}{McNee
+  et~al\mbox{.}}{2006}]%
+        {mcnee2006being}
+\bibfield{author}{\bibinfo{person}{Sean~M McNee}, \bibinfo{person}{John Riedl},
+  {and} \bibinfo{person}{Joseph~A Konstan}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Being accurate is not enough: how accuracy metrics
+  have hurt recommender systems}. In \bibinfo{booktitle}{\emph{CHI'06 extended
+  abstracts on Human factors in computing systems}}. ACM,
+  \bibinfo{pages}{1097--1101}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Möller, Trilling, Helberger, and van
+  Es}{Möller et~al\mbox{.}}{2018}]%
+        {moller2018blame}
+\bibfield{author}{\bibinfo{person}{Judith Möller}, \bibinfo{person}{Damian
+  Trilling}, \bibinfo{person}{Natali Helberger}, {and} \bibinfo{person}{Bram
+  van Es}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Do not blame it on the algorithm: an empirical
+  assessment of multiple recommender systems and their impact on content
+  diversity}.
+\newblock \bibinfo{journal}{\emph{Information, Communication \& Society}}
+  \bibinfo{volume}{21}, \bibinfo{number}{7} (\bibinfo{year}{2018}),
+  \bibinfo{pages}{959--977}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nguyen, Hui, Harper, Terveen, and
+  Konstan}{Nguyen et~al\mbox{.}}{2014}]%
+        {nguyen2014exploring}
+\bibfield{author}{\bibinfo{person}{Tien~T Nguyen}, \bibinfo{person}{Pik-Mai
+  Hui}, \bibinfo{person}{F~Maxwell Harper}, \bibinfo{person}{Loren Terveen},
+  {and} \bibinfo{person}{Joseph~A Konstan}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Exploring the filter bubble: the effect of using
+  recommender systems on content diversity}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 23rd international conference on
+  World wide web}}. ACM, \bibinfo{pages}{677--686}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pariser}{Pariser}{2011}]%
+        {pariser2011filter}
+\bibfield{author}{\bibinfo{person}{Eli Pariser}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The filter bubble: How the new personalized
+  web is changing what we read and how we think}}.
+\newblock \bibinfo{publisher}{Penguin}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pu, Chen, and Hu}{Pu et~al\mbox{.}}{2011}]%
+        {pu2011user}
+\bibfield{author}{\bibinfo{person}{Pearl Pu}, \bibinfo{person}{Li Chen}, {and}
+  \bibinfo{person}{Rong Hu}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{A user-centric evaluation framework for recommender
+  systems}. In \bibinfo{booktitle}{\emph{Proceedings of the fifth ACM
+  conference on Recommender systems}}. \bibinfo{pages}{157--164}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Schulz, Bhui, Love, Brier, Todd, and
+  Gershman}{Schulz et~al\mbox{.}}{2019}]%
+        {schulz2019structured}
+\bibfield{author}{\bibinfo{person}{Eric Schulz}, \bibinfo{person}{Rahul Bhui},
+  \bibinfo{person}{Bradley~C Love}, \bibinfo{person}{Bastien Brier},
+  \bibinfo{person}{Michael~T Todd}, {and} \bibinfo{person}{Samuel~J Gershman}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Structured, uncertainty-driven exploration in
+  real-world consumer choice}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the National Academy of
+  Sciences}} (\bibinfo{year}{2019}), \bibinfo{pages}{201821028}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Steck}{Steck}{2018}]%
+        {steck2018calibrated}
+\bibfield{author}{\bibinfo{person}{Harald Steck}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Calibrated recommendations}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 12th ACM conference on
+  recommender systems}}. \bibinfo{pages}{154--162}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Treviranus and Hockema}{Treviranus and
+  Hockema}{2009}]%
+        {treviranus2009value}
+\bibfield{author}{\bibinfo{person}{Jutta Treviranus} {and}
+  \bibinfo{person}{Stephen Hockema}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{The value of the unpopular: Counteracting the
+  popularity echo-chamber on the Web}. In \bibinfo{booktitle}{\emph{2009 {IEEE}
+  Toronto International Conference Science and Technology for Humanity
+  ({TIC}-{STH})}}. \bibinfo{publisher}{{IEEE}}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/tic-sth.2009.5444430}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Vargas and Castells}{Vargas and
+  Castells}{2011}]%
+        {vargas2011rank}
+\bibfield{author}{\bibinfo{person}{Sa{\'u}l Vargas} {and}
+  \bibinfo{person}{Pablo Castells}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Rank and relevance in novelty and diversity metrics
+  for recommender systems}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  fifth ACM conference on Recommender systems}}. ACM,
+  \bibinfo{pages}{109--116}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Winecoff, Brasoveanu, Casavant, Washabaugh,
+  and Graham}{Winecoff et~al\mbox{.}}{2019}]%
+        {winecoff2019users}
+\bibfield{author}{\bibinfo{person}{Amy~A Winecoff}, \bibinfo{person}{Florin
+  Brasoveanu}, \bibinfo{person}{Bryce Casavant}, \bibinfo{person}{Pearce
+  Washabaugh}, {and} \bibinfo{person}{Matthew Graham}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Users in the loop: a psychologically-informed
+  approach to similar item retrieval}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 13th ACM Conference on Recommender Systems}}. \bibinfo{pages}{52--59}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhang, S{\'e}aghdha, Quercia, and
+  Jambor}{Zhang et~al\mbox{.}}{2012}]%
+        {zhang2012auralist}
+\bibfield{author}{\bibinfo{person}{Yuan~Cao Zhang},
+  \bibinfo{person}{Diarmuid~{\'O} S{\'e}aghdha}, \bibinfo{person}{Daniele
+  Quercia}, {and} \bibinfo{person}{Tamas Jambor}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Auralist: introducing serendipity into music
+  recommendation}. In \bibinfo{booktitle}{\emph{Proceedings of the fifth ACM
+  international conference on Web search and data mining}}.
+  \bibinfo{pages}{13--22}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ziegler, McNee, Konstan, and Lausen}{Ziegler
+  et~al\mbox{.}}{2005}]%
+        {ziegler2005improving}
+\bibfield{author}{\bibinfo{person}{Cai-Nicolas Ziegler},
+  \bibinfo{person}{Sean~M McNee}, \bibinfo{person}{Joseph~A Konstan}, {and}
+  \bibinfo{person}{Georg Lausen}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Improving recommendation lists through topic
+  diversification}. In \bibinfo{booktitle}{\emph{Proceedings of the 14th
+  international conference on World Wide Web}}. ACM, \bibinfo{pages}{22--32}.
+\newblock
+
+
+\end{thebibliography}

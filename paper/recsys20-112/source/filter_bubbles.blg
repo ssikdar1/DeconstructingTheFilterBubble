@@ -1,0 +1,94 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: filter_bubbles.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: refs.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--unusual to have number, but no volume, for adomavicius2005toward
+Warning--empty publisher in celma2008hits
+Warning--empty address in celma2008hits
+Warning--empty publisher in celma2008new
+Warning--empty address in celma2008new
+Warning--empty publisher in chaney2018algorithmic
+Warning--empty address in chaney2018algorithmic
+Warning--empty publisher in cremonesi2013user
+Warning--empty address in cremonesi2013user
+Warning--empty publisher in ge2010beyond
+Warning--empty address in ge2010beyond
+Warning--empty publisher in kaminskas2014measuring
+Warning--empty address in kaminskas2014measuring
+Warning--page numbers missing in both pages and numpages fields in kaminskas2014measuring
+Warning--empty publisher in kotkov2018investigating
+Warning--empty address in kotkov2018investigating
+Warning--empty address in lichtenstein2006construction
+Warning--empty publisher in maksai2015predicting
+Warning--empty address in maksai2015predicting
+Warning--empty address in mas1995microeconomic
+Warning--empty publisher in mcnee2006being
+Warning--empty address in mcnee2006being
+Warning--empty publisher in nguyen2014exploring
+Warning--empty address in nguyen2014exploring
+Warning--empty address in pariser2011filter
+Warning--empty publisher in pu2011user
+Warning--empty address in pu2011user
+Warning--no number and no volume in schulz2019structured
+Warning--empty publisher in steck2018calibrated
+Warning--empty address in steck2018calibrated
+Warning--empty address in treviranus2009value
+Warning--page numbers missing in both pages and numpages fields in treviranus2009value
+Warning--empty publisher in vargas2011rank
+Warning--empty address in vargas2011rank
+Warning--empty publisher in winecoff2019users
+Warning--empty address in winecoff2019users
+Warning--empty publisher in zhang2012auralist
+Warning--empty address in zhang2012auralist
+Warning--empty publisher in ziegler2005improving
+Warning--empty address in ziegler2005improving
+You've used 33 entries,
+            5727 wiz_defined-function locations,
+            1496 strings with 21502 characters,
+and the built_in function-call counts, 41037 in all, are:
+= -- 5078
+> -- 1468
+< -- 0
++ -- 493
+- -- 496
+* -- 2872
+:= -- 4091
+add.period$ -- 169
+call.type$ -- 33
+change.case$ -- 233
+chr.to.int$ -- 33
+cite$ -- 73
+duplicate$ -- 3699
+empty$ -- 2562
+format.name$ -- 620
+if$ -- 9952
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 144
+newline$ -- 293
+num.names$ -- 264
+pop$ -- 1426
+preamble$ -- 1
+purify$ -- 530
+quote$ -- 0
+skip$ -- 1337
+stack$ -- 0
+substring$ -- 3082
+swap$ -- 408
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 777
+warning$ -- 40
+while$ -- 258
+width$ -- 0
+write$ -- 602
+(There were 40 warnings)
